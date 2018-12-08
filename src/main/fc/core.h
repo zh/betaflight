@@ -69,7 +69,8 @@ void updateArmingStatus(void);
 void taskMainPidLoop(timeUs_t currentTimeUs);
 
 bool isFlipOverAfterCrashActive(void);
-
+int8_t calculateThrottlePercent(void);
+uint8_t calculateThrottlePercentAbs(void);
 void runawayTakeoffTemporaryDisable(uint8_t disableFlag);
 bool isAirmodeActivated();
 timeUs_t getLastDisarmTimeUs(void);
@@ -79,4 +80,3 @@ void resetTryingToArm();
 void subTaskTelemetryPollSensors(timeUs_t currentTimeUs);
 
 bool isLaunchControlActive(void);
-
